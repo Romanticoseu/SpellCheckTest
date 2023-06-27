@@ -16,3 +16,8 @@ jobs:
         source_files: README.md
         task_name: Markdown
         output_file: spellcheck-output.txt
+    - uses: actions/upload-artifact@v3
+      with:
+        name: spellcheck-artifact
+        path: spellcheck-output.txt
+        if-no-files-found: error # 'warn' or 'ignore' are also available, defaults to `warn`
