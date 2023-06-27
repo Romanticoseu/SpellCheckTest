@@ -15,3 +15,4 @@ jobs:
         config_path: .github/actions/spellingAction/.spellcheck.yml
         source_files: README.md
         task_name: Markdown
+        output_file: spellcheck-output.txt
